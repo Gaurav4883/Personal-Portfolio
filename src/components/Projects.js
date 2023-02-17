@@ -3,6 +3,10 @@ import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 import projImg1 from "../assets/img/project-img1.png"
 import projImg2 from "../assets/img/project-img2.png"
 import projImg3 from "../assets/img/project-img3.png"
+import projImg5 from '../assets/img/project-img5.png'
+import projImg4 from '../assets/img/project-img4.png'
+import projImg6 from '../assets/img/project-img6.png'
+import projImg7 from '../assets/img/project-img7.png'
 import ProjectCard from './ProjectCard';
 import colorSharp2 from "../assets/img/color-sharp2.png"
 import TrackVisibility from 'react-on-screen';
@@ -11,6 +15,12 @@ function Projects() {
 
     const projects = [
 
+        {
+            title: "DALL-E 2",
+            description: 'MERN STACK',
+            imgUrl: projImg5,
+            projUrl: "https://gd-dalle-clone.netlify.app/"
+        },
         {
             title: "Snake Game",
             description: "Javascript",
@@ -30,21 +40,33 @@ function Projects() {
             projUrl: "https://gddrum.netlify.app/"
         },
         {
-            title: "coming soon",
-            description: "MERN PROJECT",
-            imgUrl: projImg1,
-        },
-        {
-            title: "coming soon",
-            description: "React JS",
-            imgUrl: projImg2,
+            title: "CSS Updater",
+            description: "Javascript",
+            imgUrl: projImg4,
+            projUrl: "https://gcss.netlify.app/",
         },
         {
             title: "coming soon",
             description: "MERN",
-            imgUrl: projImg3,
+            imgUrl: "",
         },
     ];
+
+
+    const nodeProjects = [
+        {
+            title: "RealTime Chat App",
+            description: "Nodejs",
+            imgUrl: projImg6,
+            projUrl: ""
+        },
+        {
+            title: "Contact Manager App",
+            description: "Nodejs",
+            imgUrl: projImg7,
+            projUrl: ""
+        },
+    ]
 
 
     return (
@@ -62,13 +84,13 @@ function Projects() {
                         <Tab.Container id='projects-tab' defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">React</Nav.Link>
+                                    <Nav.Link eventKey="first">MERN</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Node</Nav.Link>
+                                    <Nav.Link eventKey="second">REACT</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third">Python</Nav.Link>
+                                    <Nav.Link eventKey="third">NODE</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
@@ -84,7 +106,17 @@ function Projects() {
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second" >Coming Soon </Tab.Pane>
-                                <Tab.Pane eventKey="third">Coming Soon</Tab.Pane>
+                                <Tab.Pane eventKey="third">
+                                    <Row>
+                                        {
+                                            nodeProjects.map((project, index) => {
+                                                return (
+                                                    <ProjectCard key={index} {...project} />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
 
                             </Tab.Content>
                         </Tab.Container>
