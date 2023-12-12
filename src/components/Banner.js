@@ -10,7 +10,7 @@ function Banner() {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false)
 
-    const toRotate = ["MERN Developer", "React Developer", "Web Designer"]
+    const toRotate = ["Node Js Developer", "  SQL Developer", "Browser Extension Creator"]
 
     const [text, setText] = useState('')
     const [delta, setDelta] = useState(300 - Math.random() * 100)
@@ -53,9 +53,15 @@ function Banner() {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn " : ""}>
                                     <span className="tagline">My portfolio welcomes you</span>
-                                    <h1>{`I am Gaurav Deol !`} <span className='wrap'>{text}</span></h1>
-                                    <p>I have learnt MERN development from mindrisers for 3 months. Presently, seeking for an internship ! Completed bachelors in Bsc.(Hons) in Computer Science & Software Engineering </p>
-                                    <button onClick={() => console.log("connect")} >Let's connect <ArrowRightCircle size={25} /> </button>
+                                    <h1>{`I am Gaurav Deol !`} <br />  <span className='wrap'>{text}</span></h1>
+                                    <p>I have worked at Code Drops Pvt. Ltd. as a Node JS Developer for 1 year. Presently, working at Yoddha Lab ! Completed bachelors in Bsc.(Hons) in Computer Science & Software Engineering </p>
+                                    <button onClick={() => {
+                                        const section = document.querySelector("#connect")
+                                        if (section) {
+                                            section.scrollIntoView({ behavior: 'smooth' });
+                                        }
+                                    }
+                                    }>Let's connect <ArrowRightCircle size={25} /> </button>
                                 </div>}
                         </TrackVisibility>
                     </Col>

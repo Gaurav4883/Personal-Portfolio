@@ -7,6 +7,10 @@ import projImg5 from '../assets/img/project-img5.png'
 import projImg4 from '../assets/img/project-img4.png'
 import projImg6 from '../assets/img/project-img6.png'
 import projImg7 from '../assets/img/project-img7.png'
+import projImg8 from '../assets/img/project-img8.png'
+import projImg9 from '../assets/img/project-img9.png'
+import projImg10 from '../assets/img/project-img10.png'
+import projImg11 from '../assets/img/project-img11.png'
 import ProjectCard from './ProjectCard';
 import colorSharp2 from "../assets/img/color-sharp2.png"
 import TrackVisibility from 'react-on-screen';
@@ -14,12 +18,30 @@ import TrackVisibility from 'react-on-screen';
 function Projects() {
 
     const projects = [
+        {
+            title: "Voice Life",
+            description: 'EJS-Nodejs-SQL',
+            imgUrl: 'https://marketplace.voicelife.io/uploads/thumbnail.jpg',
+            projUrl: 'https://marketplace.voicelife.io/'
+        },
+        {
+            title: "Job Portal (Hire ME)",
+            description: 'EJS-Nodejs-SQL',
+            imgUrl: projImg9,
+            projUrl: "https://hireme.caandd.com/"
+        },
+        {
+            title: "Dazz Chat",
+            description: 'MERN',
+            imgUrl: projImg11,
+            projUrl: "https://dazzchat.vercel.app/"
+        },
 
         {
-            title: "DALL-E 2",
-            description: 'MERN STACK',
-            imgUrl: projImg5,
-            projUrl: "https://gd-dalle-clone.netlify.app/"
+            title: "Corrtex Plugin and Browser Extension",
+            description: 'HTML CSS JS Office JS',
+            imgUrl: projImg10,
+            projUrl: "https://appsource.microsoft.com/en-GB/product/office/WA200004547?tab=Overview"
         },
         {
             title: "Snake Game",
@@ -46,10 +68,18 @@ function Projects() {
             projUrl: "https://gcss.netlify.app/",
         },
         {
-            title: "coming soon",
-            description: "MERN",
-            imgUrl: "",
+            title: "DALL-E 2",
+            description: 'MERN STACK (currently not working because DALLE API is not free) ',
+            imgUrl: projImg5,
+            projUrl: "https://gd-dalle-clone.netlify.app/"
         },
+        {
+            title: "PROPERTY SELLING APP",
+            description: 'MERN STACK',
+            imgUrl: projImg8,
+            projUrl: "https://gdyariga.netlify.app/"
+        },
+
     ];
 
 
