@@ -53,7 +53,7 @@ function NavBar() {
                         <span className="navbar-text">
                             <div className="social-icon">
                                 <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/gaurav-deol-9648aa212/"><img src={navIcon1} alt="" /></a>
-                                <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/gaurav.dewal.56/"><img src={navIcon2} alt="" /></a>
+                                <a target="_blank" rel="noreferrer noopener" href="https://github.com/Gaurav4883"><img src={navIcon2} alt="" /></a>
                                 <a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/__mr.gaurav/"><img src={navIcon3} alt="" /></a>
                             </div>
                             <HashLink to='#connect'>

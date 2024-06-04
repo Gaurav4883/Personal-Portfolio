@@ -11,6 +11,14 @@ import projImg8 from '../assets/img/project-img8.png'
 import projImg9 from '../assets/img/project-img9.png'
 import projImg10 from '../assets/img/project-img10.png'
 import projImg11 from '../assets/img/project-img11.png'
+import projImg12 from '../assets/img/project-img12.png'
+import projImg13 from '../assets/img/project-img13.png'
+import projImg14 from '../assets/img/project-img14.png'
+import projImg15 from '../assets/img/project-img15.png'
+import projImg16 from '../assets/img/project-img16.png'
+import projImg17 from '../assets/img/project-img17.png'
+import projImg18 from '../assets/img/project-img18.png'
+import projImg19 from '../assets/img/project-img19.png'
 import ProjectCard from './ProjectCard';
 import colorSharp2 from "../assets/img/color-sharp2.png"
 import TrackVisibility from 'react-on-screen';
@@ -18,8 +26,27 @@ import TrackVisibility from 'react-on-screen';
 function Projects() {
 
     const projects = [
+
         {
-            title: "Voice Life",
+            title: "Ministry of Health and Population",
+            description: "Nodejs Express EJS MySql",
+            imgUrl: projImg19,
+            projUrl: "https://mohp.gov.np/np"
+        },
+        {
+            title: "AI Blog Generator",
+            description: 'Chat-GPT API Nodejs Express MySql',
+            imgUrl: projImg12,
+            projUrl: "https://ai-writer-yoddha.vercel.app/"
+        },
+        {
+            title: "Meeting Scheduling App",
+            description: 'Nodejs Express MySql',
+            imgUrl: projImg13,
+            projUrl: "https://zippyplan-yoddha.vercel.app/"
+        },
+        {
+            title: "FNFT Sharing Platform",
             description: 'EJS-Nodejs-SQL',
             imgUrl: 'https://marketplace.voicelife.io/uploads/thumbnail.jpg',
             projUrl: 'https://marketplace.voicelife.io/'
@@ -31,18 +58,54 @@ function Projects() {
             projUrl: "https://hireme.caandd.com/"
         },
         {
-            title: "Dazz Chat",
-            description: 'MERN',
+            title: "Dazz Chat (Chat App)",
+            description: 'Nodejs Express Mongodb',
             imgUrl: projImg11,
             projUrl: "https://dazzchat.vercel.app/"
         },
-
+        {
+            title: "FIB (Patient Report Sending App For Doctors) ",
+            description: 'Nodejs Express EJS Mysql',
+            imgUrl: projImg16,
+            projUrl: "https://fibonline.nl/"
+        },
+        {
+            title: "Arbo Markt (Doctors Searching App) ",
+            description: 'Nodejs Express EJS Mysql',
+            imgUrl: projImg17,
+            projUrl: "https://arbomarkt.nl/"
+        },
+        {
+            title: "Attendance App For Organizations ",
+            description: 'Nodejs Express EJS Mysql',
+            imgUrl: projImg18,
+            projUrl: "https://gotime.caandd.com/"
+        },
         {
             title: "Corrtex Plugin and Browser Extension",
             description: 'HTML CSS JS Office JS',
             imgUrl: projImg10,
             projUrl: "https://appsource.microsoft.com/en-GB/product/office/WA200004547?tab=Overview"
         },
+        {
+            title: "Chat Application Socket IO",
+            description: 'Docker Socket IO Nodejs Express MongoDB',
+            imgUrl: projImg14,
+            projUrl: "https://gauravchatapp.vercel.app/"
+        },
+
+    ];
+
+
+    const sideProjects = [
+
+        {
+            title: "Friend's Portfolio",
+            description: 'EmailJs Html CSS Js',
+            imgUrl: projImg15,
+            projUrl: "https://sammardahal.netlify.app/"
+        },
+
         {
             title: "Snake Game",
             description: "Javascript",
@@ -79,9 +142,7 @@ function Projects() {
             imgUrl: projImg8,
             projUrl: "https://gdyariga.netlify.app/"
         },
-
-    ];
-
+    ]
 
     const nodeProjects = [
         {
@@ -114,10 +175,10 @@ function Projects() {
                         <Tab.Container id='projects-tab' defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">MERN</Nav.Link>
+                                    <Nav.Link eventKey="first">PROFESSIONAL PROJECTS</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">REACT</Nav.Link>
+                                    <Nav.Link eventKey="second">SIDE PROJECTS</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">NODE</Nav.Link>
@@ -135,7 +196,17 @@ function Projects() {
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="second" >Coming Soon </Tab.Pane>
+                                <Tab.Pane eventKey="second" >
+                                    <Row>
+                                        {
+                                            sideProjects.map((project, index) => {
+                                                return (
+                                                    <ProjectCard key={index} {...project} />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
                                 <Tab.Pane eventKey="third">
                                     <Row>
                                         {
