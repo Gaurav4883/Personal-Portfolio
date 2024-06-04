@@ -19,7 +19,7 @@ function Footer() {
                     <Col sm={6} className="text-center text-sm-end " >
                         <div className="social-icon" style={marginTopStyle}>
                             <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/gaurav-deol-9648aa212/"><img src={navIcon1} alt="" /></a>
-                            <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/gaurav.dewal.56/"><img src={navIcon2} alt="" /></a>
+                            <a target="_blank" rel="noreferrer noopener" href="https://github.com/Gaurav4883"><img src={navIcon2} alt="" /></a>
                             <a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/__mr.gaurav/"><img src={navIcon3} alt="" /></a>
                         </div>
                         <p>Copy Right 2023. All rights reserved</p>
