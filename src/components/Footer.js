@@ -22,7 +22,7 @@ function Footer() {
                             <a target="_blank" rel="noreferrer noopener" href="https://github.com/Gaurav4883"><img src={navIcon2} alt="" /></a>
                             <a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/__mr.gaurav/"><img src={navIcon3} alt="" /></a>
                         </div>
-                        <p>Copy Right 2023. All rights reserved</p>
+                        <p>Copy Right 2024. All rights reserved</p>
                     </Col>
                 </Row>
             </Container>
