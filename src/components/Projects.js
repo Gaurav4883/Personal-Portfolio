@@ -43,7 +43,7 @@ function Projects() {
             title: "Meeting Scheduling App",
             description: 'Nodejs Express MySql',
             imgUrl: projImg13,
-            projUrl: "https://zippyplan-yoddha.vercel.app/"
+            projUrl: "https://zippyplan.com"
         },
         {
             title: "FNFT Sharing Platform",
